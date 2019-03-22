@@ -40,18 +40,17 @@
 			y=parseFloat(document.getElementById("b").value);
 			document.getElementById("result").innerHTML= x / y;
 		}
-		function clear(){
-			var reset
-			reset=""
-			document.getElementById("a").value=0;
-			document.getElementById("b").value=0;
+		function dele(){
+			document.getElementById("a").value = 0;
+			document.getElementById("b").value = 0;
+			document.getElementById("result").value = 0;
 		}
 	</script>
 	<button onclick="add()">加</button>
 	<button onclick="reduce()">減</button>
 	<button onclick="multiply()">乘</button>
 	<button onclick="division()">除</button>
-	<button onclick="clear()">清除</button>
+	<button onclick="dele()">清除</button>
 
 	
 
