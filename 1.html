@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>加減乘除</title>
+</head>
+<body>
+	<form>
+	<br>
+	數值A:<input type="number" id="a"> 
+	</br>
+	<br>	
+	數值B:<input type="number" id="b"> 
+	</br>	
+	<br>
+	結果: <output id="result"></output>
+	</br>
+	</form>
+	<script>
+		function add(){
+			var x,y
+			x=parseFloat(document.getElementById("a").value);
+			y=parseFloat(document.getElementById("b").value);
+			document.getElementById("result").innerHTML= x + y;
+		}
+		function reduce(){
+			var x,y
+			x=parseFloat(document.getElementById("a").value);
+			y=parseFloat(document.getElementById("b").value);
+			document.getElementById("result").innerHTML= x - y;
+		}
+		function multiply(){
+			var x,y
+			x=parseFloat(document.getElementById("a").value);
+			y=parseFloat(document.getElementById("b").value);
+			document.getElementById("result").innerHTML= x * y;
+		}
+		function division(){
+			var x,y
+			x=parseFloat(document.getElementById("a").value);
+			y=parseFloat(document.getElementById("b").value);
+			document.getElementById("result").innerHTML= x / y;
+		}
+		function clear(){
+			var reset
+			reset=""
+			document.getElementById("a").value=0;
+			document.getElementById("b").value=0;
+		}
+	</script>
+	<button onclick="add()">加</button>
+	<button onclick="reduce()">減</button>
+	<button onclick="multiply()">乘</button>
+	<button onclick="division()">除</button>
+	<button onclick="clear()">清除</button>
+
+	
+
+	
+
+</body>
+</html>
